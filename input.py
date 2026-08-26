@@ -35,3 +35,4 @@ print(f"{n1*n2:.2f}")
 # discount_amount = total_price * discout /100
 # final_price = total_price - discount_amount
 # print(final_price)
+
