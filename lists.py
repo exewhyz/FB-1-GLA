@@ -43,4 +43,53 @@ names.append("Anish")
 # names.extend([1,2,3,4,5])
 names.insert(2,"New Data")
 # print("Appended",names)
-print("Inserted",names)
+# print("Inserted",names)
+
+# UPDATE
+
+# x = [ "one", "two",[3, 4], "three"]
+# x[2][0] = "new value"
+# print(x)
+
+# DELETE/REMOVE
+
+# del keyword => deletes value at given index
+# pop(index = -1) -> deleted value => list method => deletes value at given index
+# remove(value) -> None =>  list method => deletes first matched value
+
+n = [1,2,1,1,3,4,2,5]
+
+# print("before remove",n)
+# del n[4]
+# print("deleted value:",n.pop(4))
+# n.remove(2)
+# print("after remove",n)
+
+# INDEX => list method
+
+# index(value,start = 0,stop=len(list)) ->int
+# index of first matched value
+
+# m = ["hello", "hi", "bye","hi"]
+
+# index_of_value = m.index("hi",2,3)
+# print("Index:", index_of_value)
+
+c = [1,2,[3,4]]
+
+# idx = c.index([3,4])
+# print((c[idx].index(3)))
+
+
+var = [[1,3,4]]
+# idx = c.index(var[0])
+# print((c[idx].index(3)))
+
+"""
+you have a list containing multiple list.
+Find the index of value that is 5 which is present inside first list.
+"""
+
+p = [[1,3,5,2], [3,1,2,5] , [5,2,1,3]]
+
+print(p[1].index(5))
