@@ -92,4 +92,81 @@ Find the index of value that is 5 which is present inside first list.
 
 p = [[1,3,5,2], [3,1,2,5] , [5,2,1,3]]
 
-print(p[1].index(5))
+# print(p[1].index(5))
+
+# Membership Operator ('in' and 'not in') -> bool
+# works on sequence/iterable(str,list,tuple) type of data
+
+# text = "hello, how are you?"
+
+# j = [1, 2, 345, [4,5],"hello"]
+
+# print( "o" in j[-1])
+
+# Reverse => list method => list_name.reverse() -> None
+# j.reverse()
+# print(j)
+
+
+# Sorting
+"""
+1. sort(reverse=False, key=None) -> None => list method => sorts list in asc order by default
+2. sorted(list_name, reverse=False, key=None) -> List => direct built methods => sorts list in asc order by default and provides new list in return without changing orignal list.
+"""
+
+nums = [7,4,6,8,10,9,1,5,3,2]
+
+# nums.sort() # asc
+nums.sort(reverse=True) # dsc
+# nums.reverse() # same as reverse = True
+# print(nums)
+
+
+# x = [1,2,3,"hello"]
+# x.sort()
+# print(x)
+
+
+# y = ["xyz", "pqr", "klm","kmn"]
+# y = ["a", "j", "X", "b", "Z"]
+# y.sort()
+# print(y)
+
+
+# v = ["aditya", "adi9tya"]
+# v.sort()
+# print(v)
+
+# g = [1,True, False,0 , -1]
+# g.sort()
+# print(g)
+
+k = ["himanshu", "gulshan", "chirag", "aniket","Abhimanyu"]
+
+# [8, 7, 6, 6, 9]
+# [6, 6 ,7 , 8, 9]
+# ["aniket", "chirag", "gulshan", "himanshu", "abhimanyu"]
+k.sort(key=len)
+# print(k)
+
+t = ["v", "H", "d", "a", "Z"]
+t.sort(key=str.lower)
+# ["v", "h","d","a","z"]
+# ["a","d","h","v","z"]
+# ["a","d","H","v","Z"]
+# print(t)
+
+
+l = [0,1,2,3,-4,4,7,6,5,8,9,10]
+
+def hello(num):
+    print(num , num % 2 == 0 and num + 1)
+    return num % 2 == 0 and num + 1
+
+l.sort(key=hello)
+
+# [1,False, 3, False,-3, 5, False, 7, False, 9 , False, 11]
+# [1, 0, 3, 0, -3, 5, 0, 7, 0, 9, 0, 11]
+# [-3,0,0,0,0,0,1,3,5,7,9,11]
+# [-4,0,1,3,5,7,9,2,4,6,8,10]
+print(l)
