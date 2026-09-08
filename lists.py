@@ -163,10 +163,80 @@ def hello(num):
     print(num , num % 2 == 0 and num + 1)
     return num % 2 == 0 and num + 1
 
-l.sort(key=hello)
+# l.sort(key=hello)
 
 # [1,False, 3, False,-3, 5, False, 7, False, 9 , False, 11]
 # [1, 0, 3, 0, -3, 5, 0, 7, 0, 9, 0, 11]
 # [-3,0,0,0,0,0,1,3,5,7,9,11]
 # [-4,0,1,3,5,7,9,2,4,6,8,10]
-print(l)
+# print(l)
+
+# print(sorted(l,reverse=False,key=hello))
+
+
+
+"""
+Direct Built In methods
+print()
+input()
+type()
+len()
+int()
+str()
+complex()
+abs()
+bool()
+list()
+tuple()
+sorted()
+
+max()
+min()
+sum()
+"""
+
+# max(list_name) -> value_type
+# min(list_name) -> value_type
+
+o = [45, 65, 28, 99, 163, 2, 57]
+# print("MAXIMUM",max(o))
+# print("MINIMUM",min(o))
+
+k =[True , False, 2,-5.3, 3.64]
+# print(max(k))
+# print(min(k))
+
+l = ["h5ye","h8ii","h9ello"]
+
+# print(max(l))
+
+#sum(list_name,start=0) -> int
+
+# i = ["hello", "hii", "bye"]
+# i = ["1", "2", "3"]
+# i = [True , False, 65]
+
+# i = [1.2,1,3]
+# start = True
+# start = 1
+# start = start + i[0]
+# start = start + i[1]
+# start = start + i[2]
+
+# print(sum(i,start=True))
+
+
+# clear() -> None => modifies original list and removes everything
+# v = [1,2,3,4,5]
+# v.clear()
+# print(v)
+
+# copy() -> list => list method that copies only value of object not address/reference
+
+u = [1,2,3]
+# v = u
+v = u.copy()
+v.append(4)
+u.pop(1)
+print("U", u)
+print("V", v)
