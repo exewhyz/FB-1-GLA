@@ -50,8 +50,105 @@ t = "" or '' or """""" or ''''''
 
 # string concatination and replication
 
-print("hello"+ " " * 5 + "world") # "hello" + "     " + "world"
-print("hello " * 5)
+# print("hello"+ " " * 5 + "world") # "hello" + "     " + "world"
+# print("hello " * 5)
 
 # "hello" + "hello" + "hello" + "hello" + "hello"
 # "hellohellohellohellohello"
+
+# print("lo w" in "hello world")
+# print("h" not in "hello")
+
+# movie_name = "Dhurandhar"
+# search_text = input("Search movie name: ")
+
+# if search_text in movie_name:
+#     print("Movie found:", movie_name)
+# else:
+#     print("not found")
+
+
+"""
+String methods => never modifies original string
+
+str_name.method_name()
+
+1. lower() => converts every char from upper to lower
+
+2. upper() => converts every char from lower to upper
+
+3. capitalize() => only converts lower to upper of index 0 and rest into lower
+
+4. title() => converts first char of every word to upper and rest will be in lower
+
+5. swapcase() => uppercase char to lower and vice versa
+
+6. startswith(val) => True if string starts with given value
+
+7. endswith(val) => True if string ends with given value
+
+8. index(val) => gives index of given value if present otherwise ValueError
+
+9. find(val) => gives index of given value if present otherwise '-1'
+
+10. replace(old,new) => replaces old with new
+
+11. count(value) => provides count of given value
+
+12. strip(char = " ") => removes/trims empty spaces from left and right
+
+13. lstrip(char = " ") => removes/trims empty spaces from ony left
+
+14. rstrip(char = " ") => removes/trims empty spaces from ony right
+
+15. split(sep=" ",maxsplit="-1") => splits/breaks string into list
+
+16. join(list) => merges/joins list values into string
+
+17. isalpha() => True if string has only alphabets
+
+18. isdigit() => True if string has only numbers
+
+19. isalnum() => True if string has both alphabets and nums
+
+20. isspace() => True if string has only spaces
+
+21. islower() => True if all chars are in lowercase
+22. isupper() => True if all chars are in uppercase
+23. iscapitalize() => True if only index 0 char is upper and rest in lower
+24. istitle() => True if all words first char is in upper and rest in lower
+"""
+
+q = "hELlo hOw arE You?"
+# print("OG:",q)
+# print("LOWER:",q.lower())
+# print("UPPER:",q.upper())
+# print("CAPITALIZE:",q.capitalize())
+# print("TITLE:",q.title())
+# print("SWAPCASE:",q.swapcase())
+
+# print("ISLOWER:", "hello".islower())
+# print("ISLOWER:", "HELLO".swapcase().islower())
+
+q2 = "python programming"
+
+#yth
+# print(q2.startswith(("yth","z"),1,4))
+# print(q2.endswith("ing",1,4))
+
+
+# print("testing".startswith(("test", "t", "T", "Test")))
+
+"""
+A shop records the following information:
+item = "Laptop"
+price = 45000
+quantity = 2
+discount = 10
+
+Write Python statements to:
+Calculate the total price before discount.
+Calculate the discount amount and final payable amount.
+Display the final amount along with its data type.
+Modify the program so that the quantity is taken from the user instead of being fixed as 2.
+"""
