@@ -152,3 +152,49 @@ Calculate the discount amount and final payable amount.
 Display the final amount along with its data type.
 Modify the program so that the quantity is taken from the user instead of being fixed as 2.
 """
+
+# index(str,start=0,end=len(str)) -> int
+
+# text1 = "python programming in"
+
+# print(text1.index("in",16))
+# print(text1.find("python"))
+
+text2 = "I like java"
+# print(text2.count("a",8,10))
+# print(text2.replace("a","@",1))
+
+
+# strip(chars=" ") => removes left and right side spaces
+# lstrip(chars=" ") => removes only left side spaces
+# rstrip(chars=" ") => removes only right side spaces
+
+# text6 = "!  #@    !!!####hello world!!    "
+# print(text6,"bye")
+# print(text6.strip("!# "),"bye")
+# print(text6.lstrip(),"bye")
+# print(text6.rstrip(),"bye")
+
+# split(sep=" ",maxsplit=-1) -> list => breaks string to list
+
+r = "hello how are you how 1"
+# r = "1-2-3"
+# r = "1&3"
+
+# print(r.split("how",50))
+
+# items = ["mango", "pencil", "table"]
+
+# print("".join(items))
+
+# count number of letter present in given string excluding spaces
+
+text9 = "Python Programming"
+
+# total_len = len(text9)
+# total_spaces = text9.count(" ")
+# total_letters = total_len - total_spaces
+# print(total_letters)
+
+words = text9.split()
+print(len("".join(words)))
