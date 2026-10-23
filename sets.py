@@ -83,5 +83,10 @@ set_c = {10}
 
 # print(set_a.isdisjoint(set_c))
 
-print(set_a ^ set_b)
-print(set_a.symmetric_difference(set_b))
+# print(set_a ^ set_b)
+# print(set_a.symmetric_difference(set_b))
+
+print(frozenset("hello"))
+print(frozenset([1,2,3,4,5]))
+print(frozenset((1,2,3,4,5)))
+print(frozenset({1,2,3,4,5}))
