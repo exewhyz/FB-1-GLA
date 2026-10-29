@@ -95,10 +95,85 @@ nums = [1,4,5,2,3,9,11]
 # return keyword
 
 def add_nums(a,b):
+    print("hii")
     return a+b
+    print("hello")
+    
+# we can retrun multiple values using return keyword but can't use multiple return keyword in a function
+# nothing will execute after return line in a function
+# function will exit after returning the values
     
 # print(add_nums(2,6))
 # print(f"{add_nums(2,6):.2f}")
 
 # round(number, no_of_decimal_place)
-print(round(8.7729,2))
+# print(round(8.7729,2))
+
+# lambda function
+
+def double(x):
+    return x * 2
+
+# print(double(5))
+
+db = lambda x : x * 2
+# print(db(6))
+
+# print((lambda a,b : a + b)(1,3)) #iifi
+
+# add = lambda a,b : a + b
+# print(add(3,8))
+
+# callback - function as argument
+# hof - function that accepts function as an argument
+
+# def add(a,b):
+#     return a+b
+add = lambda a,b : a+b
+# def sub(a,b):
+#     return a-b
+sub = lambda a,b : a-b
+# def mul(a,b):
+#     return a*b
+mul = lambda a,b : a*b
+
+def calculate(x,y,operation):
+    result = operation(x,y)
+    print(result)
+
+# calculate(4,3, add)
+# calculate(4,3, lambda a,b : a+b)
+
+# map, filter, reduce
+
+# nums = [34, 2, 21, 17 ,14, 96]
+
+# for v in nums:
+#     print(v)
+even = [] 
+
+# n = []
+# for i in range(1,10):
+#     n.append(i * 2)
+# print(n)
+
+# map(callback, iterable) -> map
+# iterable - str,list,tuple,set, range()
+
+# def d(a):
+#     return a * 2
+# print(set(map(d, range(1,10))))
+
+# print(set(map(lambda a:a*2, range(1,10))))
+
+# local scope and global scope
+
+x = 5
+
+def check():
+    global x
+    x = 10
+    print("Inside fn",x)
+
+check()
+print("Outside fn",x)
