@@ -168,12 +168,28 @@ even = []
 
 # local scope and global scope
 
-x = 5
+# x = 5
 
-def check():
-    global x
-    x = 10
-    print("Inside fn",x)
+# def check():
+#     global x
+#     x = 10
+#     print("Inside fn",x)
 
-check()
-print("Outside fn",x)
+# check()
+# print("Outside fn",x)
+
+# filter(callback, iterable) -> filter
+
+products = [{"name":"P1", "color":"red", "price": 1000}, 
+    {"name":"P2", "color":"yellow", "price": 2000},
+    {"name":"P3", "color":"black", "price": 3000}]
+
+# filtered_data = []
+# for p in products:
+#     if p["color"] == "black":
+#         filtered_data.append(p)
+# print(filtered_data)
+
+print(list(filter(lambda x: x["color"] == "black", products)))
+
+# print([x for x in products if x["color"] == "black"])
